@@ -1,0 +1,10 @@
+function roll(sides, dice, tech) {
+    var total = 0
+    for (i=0; i<dice; i++) {
+    rand = (Math.floor(Math.random() * sides + 1)); 
+    total += rand;
+    console.log(rand);
+    }
+    return total + " plus your tech level of " + tech + " to give you " + (total+tech);
+}
+roll(6, 5, 5);
